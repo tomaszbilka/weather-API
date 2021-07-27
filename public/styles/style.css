@@ -1,0 +1,177 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(45deg, #FC466B, #3F5EFB);
+}
+
+.container {
+    position: absolute;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    color: #fff;
+    opacity: 0.7;
+    font-size: 1.4rem;
+    margin-top: 0;
+    margin-bottom: 60px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+}
+
+header i {
+    margin-right: 10px;
+}
+
+form {
+    background: rgba(158, 158, 158, 0.3);
+    padding: 3em;
+    height: 320px;
+    border-radius: 20px;
+    border-left: 1px solid rgba(158, 158, 158, 0.3);
+    border-top: 1px solid rgba(158, 158, 158, 0.3);
+    backdrop-filter: blur(10px); 
+    box-shadow: 20px 20px 40px -6px rgba(0,0,0,0.2);
+    text-align: center;
+    position: relative;
+    transition: all 0.2s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input, button {
+    background: transparent;
+    width: 200px;
+    padding: 1em;
+    margin-bottom: 2em;
+    border: none;
+    border-left: 1px solid rgba(255,255,255,0.3);
+    border-top: 1px solid rgba(255,255,255,0.3);
+    border-radius: 5000px;
+    backdrop-filter: blur(5px);
+    box-shadow: 4px 4px 60px rgba(0,0,0,0.2);
+    color: #fff;
+    font-family: Montserrat, sans-serif;
+    font-weight: 500;
+    transition: all 0.2s ease-in-out;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+}
+
+input:hover, button:hover {
+    background: rgba(255,255,255,0.1);
+    box-shadow: 4px 4px 60px 8px rgba(0,0,0,0.2);
+  }
+
+form:hover {
+    margin: 4px;
+}
+
+input:focus {
+    background: rgba(255,255,255,0.1);
+    box-shadow: 4px 4px 60px 8px rgba(0,0,0,0.2);
+  }
+
+button {
+    margin-top: 20px;
+      width: 150px;
+      font-size: 1rem;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+button:active {
+    background: rgba(255,255,255,0.2);
+  }
+
+  input::placeholder {
+    font-family: Montserrat, sans-serif;
+    font-weight: 400;
+    color: rgb(180, 177, 177);
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.4);
+    text-align: center;
+  }
+
+  input, button:focus {
+      outline: none;
+  }
+
+  .drop {
+    background: rgba(255,255,255,0.2);
+    backdrop-filter: blur(5px);
+    border-radius: 10px;
+    border-left: 1px solid rgba(255,255,255,0.2);
+    border-top: 1px solid rgba(255,255,255,0.2);
+    box-shadow: 10px 10px 60px -8px rgba(0,0,0,0.2);
+    position: absolute;
+    transition: all 0.2s ease;
+  }
+
+  .drop-1 {
+    height: 60px;
+    width: 60px;
+    top: -20px;
+    left: -20px;
+  }
+  
+  .drop-2 {
+    height: 80px;
+    width: 80px;
+    bottom: -5px;
+    right: -10px;
+    z-index: -1;
+  }
+  
+  .drop-3 {
+    height: 70px;
+    width: 70px;
+    bottom: 110px;
+    left: -15px;
+    z-index: -1;
+  }
+  
+  .drop-4 {
+    height: 90px;
+    width: 90px;
+    top: -30px;
+    right: -40px;
+    z-index: -1;
+  }
+
+  .drop-5 {
+    height: 40px;
+    width: 80px;
+    bottom: -20px;
+    left: 10px;
+  }
+  
+ /******* response page ********/
+ p {
+    background: transparent;
+    padding-bottom: 1em;
+    color: #fff;
+    font-family: Montserrat, sans-serif;
+    font-weight: 500;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+ }
+
+ .answear {
+     height: auto;
+ }
+
+ img {
+     width: 100px;
+     height: auto;
+ }
