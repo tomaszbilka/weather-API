@@ -2,7 +2,6 @@ const express = require( "express" );
 const https = require( "https" );
 const ejs = require( "ejs" );
 
-const port = 3000;
 
 const app = express();
 
@@ -50,4 +49,10 @@ app.post( "/", ( req, res ) => {
 } );
 
 
-app.listen( port, () => console.log( `Server is running on port ${ port }` ) );
+//port server in heroku
+let port = process.env.PORT;
+if ( port == null || port == "" ) {
+    port = 3000;
+};
+
+app.listen( port, () => console.log( `Server is running` ) );
