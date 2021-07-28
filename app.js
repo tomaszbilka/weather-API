@@ -35,11 +35,11 @@ app.post( "/", ( req, res ) => {
         if ( response.statusCode === 200 ) {
             response.on( "data", data => {
                 const weatherData = JSON.parse( data );
-                const temp = weatherData.main.temp;
+                const temp = weatherData.main.temp.toFixed( 1 );
                 const weatherDescription = weatherData.weather[ 0 ].description;
                 const icon = weatherData.weather[ 0 ].icon;
                 const imgUrl = "http://openweathermap.org/img/wn/" + icon + "@2x.png";
-                res.render( "weather", { city: query, description: weatherDescription, icon: imgUrl } );
+                res.render( "weather", { city: query, description: weatherDescription, icon: imgUrl, temperature: temp } );
             } );
         } else {
             res.render( "weather", { city: query, description: "you put wrong city name", icon: "https://image.flaticon.com/icons/png/512/158/158391.png" } );
