@@ -42,7 +42,7 @@ app.post( "/", ( req, res ) => {
                 res.render( "weather", { city: query, description: weatherDescription, icon: imgUrl, temperature: temp } );
             } );
         } else {
-            res.render( "weather", { city: query, description: "you put wrong city name", icon: "https://image.flaticon.com/icons/png/512/158/158391.png" } );
+            res.render( "weather", { city: query, description: "you put wrong city name", icon: "https://image.flaticon.com/icons/png/512/158/158391.png", temperature: "" } );
         }
 
     } );
